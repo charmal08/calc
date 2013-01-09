@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<title>Calculator</title>
+</head>
+
+<body bgcolor="Black"><center>
+
+    <h1>Calculator</h1>
+	
+    <form id="calculator" name="calculator">
+           
+ 	
+	
+   	  <tr>
+	  <td>
+	  <input type="text" name="text" size="15"></br>
+	  </td>
+	  </tr>
+	  
+	<%
+	
+	  <tr><br>
+	  <input type="button" value="1" onclick="calculator.text.value += '1'">
+	  <input type="button" value="2" onclick="calculator.text.value += '2'">
+	  <input type="button" value="3" onclick="calculator.text.value += '3'">
+	  <input type="button" value="4" onclick="calculator.text.value += '4'"></br>
+	  </tr>
+
+	
+	  <tr><br>
+	  <input type="button" value="5" onclick="calculator.text.value += '5'">
+	  <input type="button" value="6" onclick="calculator.text.value += '6'">
+	  <input type="button" value="7" onclick="calculator.text.value += '7'">
+	  <input type="button" value="8" onclick="calculator.text.value += '8'"></br>
+	  </tr>
+
+	  <tr><br>
+	  <input type="button" value="9" onclick="calculator.text.value += '9'">
+	  <input type="button" value="0" onclick="calculator.text.value += '0'">
+	  <input type="button" value="+" onclick="calculator.text.value += '+'">
+	  <input type="button" value="-" onclick="calculator.text.value += '-'"></br>
+	  </tr>
+    
+	  <tr><br>
+	  <input type="button" value="*" onclick="calculator.text.value += '* '">
+	  <input type="button" value="/" onclick="calculator.text.value += '/ '">
+	  <input type="reset" value="c" >
+	  <input type="button" value="=" onclick="calculator.text.value = eval(calculator.text.value)"></br>
+	  </tr>
+	 
+	%>  
+	 </form>  
+    
+	
+</body></center>
+</html>
